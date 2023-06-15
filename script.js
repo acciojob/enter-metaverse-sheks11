@@ -1,10 +1,11 @@
 //your JS code here. If required.
-let btn=document.getElementById("enterBtn");
+let btn=document.getElementById("enter");
 let para=document.getElementById("status");
 
 btn.addEventListener("click",()=>{
-    para.style.display="none";
+    para.innerText="";
     let head=document.createElement("h1");
     head.innerHTML="Entered Metaverse"
-    document.body.appendChild(head);
+    para.appendChild(head);
 })
+
