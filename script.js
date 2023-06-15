@@ -1,15 +1,12 @@
-//your JS code here. If required.
-let btn=document.getElementById("enterBtn");
-let para=document.getElementById("status");
-let head=document.getElementById("heading");
+const statusElement = document.getElementById("status");
+const enterButton = document.getElementById("enterBtn");
+let head = document.getElementById('status');
 
-btn.addEventListener("click",()=>{
-    // para.innerText="";
-    // let head=document.createElement("h1");
-    // head.innerHTML="Entered Metaverse"
-    // para.appendChild(head);
-    para.innerText="";
-    head.innerHTML="Entered Metaverse";
-
-})
+ enterButton.addEventListener("click", function() {
+   const h1Element = document.createElement("h1");
+  h1Element.id ="status";
+    h1Element.textContent = "Entered Metaverse";
+	 head.appendChild(h1Element);
+     statusElement.parentNode.replaceChild(h1Element, statusElement);
+});
 
